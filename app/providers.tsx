@@ -1,0 +1,12 @@
+"use client"
+import { SessionProvider } from "next-auth/react"
+
+export function Provider({session,children}:any){
+    return<SessionProvider
+    >
+        {children}
+
+    </SessionProvider>
+}
+
+//then be placedin providers ...
